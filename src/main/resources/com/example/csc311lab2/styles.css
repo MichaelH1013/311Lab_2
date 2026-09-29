@@ -1,0 +1,133 @@
+/* ---------- Splash ---------- */
+.splash-root {
+    -fx-background-color: #9cc3f0;
+}
+
+.splash-progress {
+    -fx-pref-height: 32;
+}
+
+.splash-progress .track {
+    -fx-background-color: #d9d9d9;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.splash-progress .bar {
+    -fx-background-color: #5457f5;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+
+.splash-percent {
+    -fx-font-size: 11px;
+    -fx-text-fill: black;
+}
+
+.next-button {
+    -fx-background-color: #5457f5;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+
+.next-button:hover {
+    -fx-background-color: #3f42d8;
+}
+
+/* ---------- Login ---------- */
+.login-root {
+    -fx-background-color: white;
+}
+
+.text-field, .password-field {
+    -fx-background-color: #fdfdfd;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-size: 15px;
+    -fx-padding: 0 20 0 20;
+}
+
+.gray-button {
+    -fx-background-color: #d9d9d9;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.gray-button:hover {
+    -fx-background-color: #c4c4c4;
+}
+
+.logo-circle {
+    -fx-fill: #b7cbc9;
+}
+
+.logo-text {
+    -fx-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* ---------- Landing ---------- */
+.landing-root {
+    -fx-background-color: white;
+}
+
+.menu-bar {
+    -fx-background-color: #d9d9d9;
+}
+
+.menu-bar .label {
+    -fx-text-fill: black;
+}
+
+.landing-scroll {
+    -fx-background-color: white;
+    -fx-background: white;
+}
+
+.tables-area {
+    -fx-background-color: white;
+    -fx-padding: 5 0 5 0;
+}
+
+.db-table {
+    -fx-background-color: white;
+    -fx-border-color: #33d69f;
+    -fx-border-width: 1;
+}
+
+.db-header {
+    -fx-background-color: #33d69f;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 7 6 7 6;
+}
+
+.db-row {
+    -fx-border-color: #33d69f;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 6 6 6 6;
+    -fx-pref-height: 26;
+}
+
+.db-row .label {
+    -fx-text-fill: #b5b5b5;
+    -fx-font-family: "Consolas", "Monospaced";
+    -fx-font-size: 10px;
+}
+
+.db-id {
+    -fx-font-size: 8px;
+}
