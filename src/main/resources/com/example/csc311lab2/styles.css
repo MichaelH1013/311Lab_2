@@ -1,4 +1,4 @@
-/* ---------- Splash ---------- */
+
 .splash-root {
     -fx-background-color: #9cc3f0;
 }
@@ -38,7 +38,7 @@
     -fx-background-color: #3f42d8;
 }
 
-/* ---------- Login ---------- */
+
 .login-root {
     -fx-background-color: white;
 }
@@ -78,7 +78,7 @@
     -fx-font-weight: bold;
 }
 
-/* ---------- Landing ---------- */
+
 .landing-root {
     -fx-background-color: white;
 }

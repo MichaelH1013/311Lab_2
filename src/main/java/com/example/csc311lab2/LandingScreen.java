@@ -20,7 +20,7 @@ public class LandingScreen {
     public LandingScreen(Runnable onLogout) {
         root.getStyleClass().add("landing-root");
 
-        // ----- Menu bar (File / Edit / Help) -----
+
         MenuItem logout = new MenuItem("Log Out");
         logout.setOnAction(e -> onLogout.run());
 
@@ -35,7 +35,7 @@ public class LandingScreen {
         MenuBar menuBar = new MenuBar(file, edit, help);
         root.setTop(menuBar);
 
-        // ----- Two table cards side by side -----
+
         HBox tables = new HBox(buildTable(), buildTable());
         tables.setAlignment(Pos.TOP_CENTER);
         tables.getStyleClass().add("tables-area");

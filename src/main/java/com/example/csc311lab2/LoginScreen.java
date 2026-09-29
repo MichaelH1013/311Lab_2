@@ -30,12 +30,12 @@ public class LoginScreen {
         this.onCancel = onCancel;
         root.getStyleClass().add("login-root");
 
-        // ----- Form (bottom of the left column) -----
+
         form.setAlignment(Pos.BOTTOM_LEFT);
         form.setPadding(new Insets(0, 0, 40, 60));
         showLoginForm();
 
-        // ----- Left column: small circle on top, form pinned to the bottom -----
+
         Region spacer = new Region();
         VBox.setVgrow(spacer, Priority.ALWAYS);
 
@@ -43,14 +43,14 @@ public class LoginScreen {
         leftColumn.setPrefWidth(440);
         leftColumn.setMinWidth(440);
 
-        // ----- Right side: the ram -----
+
         StackPane ram = buildRam();
         HBox.setHgrow(ram, Priority.ALWAYS);
 
         root.getChildren().addAll(leftColumn, ram);
     }
 
-    // ---------- LOGIN MODE ----------
+
     private void showLoginForm() {
         TextField username = field("Username");
         PasswordField password = passwordField("Password");
@@ -70,7 +70,7 @@ public class LoginScreen {
         form.getChildren().setAll(username, password, buttons);
     }
 
-    // ---------- REGISTER MODE ----------
+
     private void showRegisterForm() {
         TextField firstName = field("First name");
         TextField lastName = field("Last name");
@@ -89,7 +89,7 @@ public class LoginScreen {
         form.getChildren().setAll(firstName, lastName, email, password, buttons);
     }
 
-    // ---------- helpers ----------
+
     private TextField field(String prompt) {
         TextField tf = new TextField();
         tf.setPromptText(prompt);
@@ -113,11 +113,11 @@ public class LoginScreen {
         return b;
     }
 
-    /** Small circle above the form. Kept small so the taller register form never covers it. */
+
     private StackPane buildCircleLogo() {
         StackPane holder = new StackPane();
         holder.setAlignment(Pos.CENTER);
-        // Padding matches the form (60 left) and its 320px width, so the circle is centered over the fields
+
         holder.setPadding(new Insets(30, 60, 0, 60));
 
         Circle circle = new Circle(90);
@@ -132,7 +132,7 @@ public class LoginScreen {
         return holder;
     }
 
-    /** Ram mascot on the right. Save the image as "ram.jpg" in the resources folder. */
+
     private StackPane buildRam() {
         StackPane holder = new StackPane();
         holder.setAlignment(Pos.CENTER);

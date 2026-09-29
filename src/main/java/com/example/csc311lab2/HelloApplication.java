@@ -26,7 +26,7 @@ public class HelloApplication extends Application {
     private void showSplash() {
         Stage splashStage = new Stage(StageStyle.UNDECORATED);
 
-        // Only moves on when the user clicks NEXT
+
         SplashScreen splash = new SplashScreen(() -> {
             splashStage.close();
             showLogin();
@@ -41,7 +41,7 @@ public class HelloApplication extends Application {
         splash.play();
     }
 
-    // Also used by the File > Log Out menu item
+
     private void showLogin() {
         LoginScreen login = new LoginScreen(this::showLanding, Platform::exit);
 

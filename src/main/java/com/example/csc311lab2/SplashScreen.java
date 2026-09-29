@@ -26,7 +26,7 @@ public class SplashScreen {
     public SplashScreen(Runnable onNext) {
         root.getStyleClass().add("splash-root");
 
-        // Background photo: splash.jpg in the resources folder
+
         InputStream imgStream = getClass().getResourceAsStream("splash.jpg");
         if (imgStream != null) {
             ImageView bg = new ImageView(new Image(imgStream));
@@ -44,13 +44,13 @@ public class SplashScreen {
         StackPane barHolder = new StackPane(progressBar, percentLabel);
         barHolder.setMaxSize(420, 32);
 
-        // NEXT button: invisible until loading hits 100%
+
         nextButton.getStyleClass().add("next-button");
         nextButton.setPrefSize(140, 40);
         nextButton.setVisible(false);
         nextButton.setOnAction(e -> onNext.run());
 
-        // Placed at the top so it doesn't cover the text baked into the photo
+
         VBox stack = new VBox(15, barHolder, nextButton);
         stack.setAlignment(Pos.TOP_CENTER);
         stack.setPadding(new Insets(35, 0, 0, 0));
@@ -65,7 +65,7 @@ public class SplashScreen {
         return root;
     }
 
-    /** Animates the bar 0 -> 100%, then reveals the NEXT button. */
+
     public void play() {
         Timeline timeline = new Timeline(
                 new KeyFrame(Duration.seconds(3),
